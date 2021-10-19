@@ -1,20 +1,24 @@
 /*
 
-Write a C program that finds the base, heigh and area of a triangle
+Write a C program that finds the area of a triangle based on any number given the the user
+Users input the base and height, and the calculation of the area is given to the user
 
 */
 
+
 #include <stdio.h>
-
 int main() {
-
-    double base = 10.5;
-    double height = 4.8;
+    // insert code here...
+    double base=0;
+    double height = 0;
+  // Ask user for the base
+    printf("Enter the base of the triangle:\n");
+    scanf("%lf",&base);
+  // Ask user for the heigh
+    printf("Enter the height of the triangle:\n");
+    scanf("%lf",&height);
+    // Finding the area
     double area = base * height/2.0;
-    printf( "This is the base of my triangle = %f\n", base );
-    printf( "This is the height of my triangle = %f\n", height );
-    printf( "The triangle area is = %f\n", area );
-
-return( 0 );
-
+    printf("The triangle area is = %f\n", area);
+    return 0;
 }
