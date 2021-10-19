@@ -1,10 +1,6 @@
 /*
 
-Name: John Smith Date: Jan 1st, 1900 - This is called top level comments
-
-Include top level comments in every assignment
-
-final grade is the average of a midterm and a final exam
+Write a C program that finds the base, heigh and area of a triangle
 
 */
 
