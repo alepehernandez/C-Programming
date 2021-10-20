@@ -1,0 +1,16 @@
+/* Using logical and (&&) write a C program that takes three integer command-line arguments and print equal if all three are equal, and not equal otherwise */
+
+#include <stdio.h>
+
+int main() {
+    int int1, int2, int3;
+    printf("Enter the value for num1, num2, and num3:\n");
+    scanf("%d %d %d", &int1, &int2 , &int3);
+    
+    if ((int1==int2) && (int2==int3))
+        
+    printf("All three numbers are equal\n");
+    else
+        printf("The numbers are not equal\n");
+    return 0;
+}
