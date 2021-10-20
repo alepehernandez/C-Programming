@@ -1,7 +1,7 @@
 /*
 
-Write a C program that finds the area of a triangle based on any number given the the user
-Users input the base and height, and the calculation of the area is given to the user
+Write a C program that finds the area of a triangle. The user would input the number in the terminal, using scanf to read the given input.
+Users input the base and height, and the calculation of the area is given to the user. 
 
 */
 
