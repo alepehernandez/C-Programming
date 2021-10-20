@@ -1,0 +1,24 @@
+//  Created by Alejandra Perez Hernandez on 10/19/21.
+/* Create a program that reads from monitor from user input. Numbered enteres by user. Numbers 10.2, -11.5, 72.4 Your program needs to calculate square of the number (number ^2) and (number ^3) result need to be printed and displayed-- Run it threee times*/
+
+#include <stdio.h>
+
+int main() {
+    // declare variables...
+    double num;
+    
+    // Ask user for the numbers
+    printf("Please enter your number:\n");
+    scanf("%lf", &num);
+    
+    double num2;
+    double num3;
+    num2= num*num;
+    num3= num*num*num;
+    
+    printf("The Result for my calculation for num^2 is %f\n", num2);
+    printf("The Result for my calculation for num^3 is %f\n", num3);
+    
+    
+    return 0;
+}
