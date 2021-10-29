@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+void printSomething();
+
+int main(){
+    printSomething();
+    printSomething();
+    printSomething();
+return 0;
+}
+
+void printSomething(){
+    printf("I'm a function\n");
+    return;
+}
