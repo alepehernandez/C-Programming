@@ -1,0 +1,35 @@
+//
+//  main.c
+//  L13
+// Write a function that adds two arrays, 
+//  Created by Alejandra Perez Hernandez on 11/3/21.
+//
+
+#include <stdio.h>
+void SumOfArrays (int[],int[], int[], int);
+int main()
+{
+    int array1[4]={1,2,3,4};
+    int array2[4]={-1,-2,-3,-4};
+    int sum_array[4];
+    int arraySize=4;
+    SumOfArrays(array1,array2,sum_array,arraySize);
+    
+    // print elements of sum_array
+    for(int i=0;i<4;i++)
+    {
+        printf("%d\n",sum_array[i]);
+     
+    }
+}
+
+    void SumOfArrays(int array1[],int array2[],int sum_array[], int arraySize)
+    
+    {
+    for(int i=0;i<arraySize;i++)
+    {
+        sum_array[i]=array1[i]+array2[i];
+    }
+    }
+    
+
