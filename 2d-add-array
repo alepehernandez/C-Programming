@@ -1,0 +1,23 @@
+/* Write, Compille and Run a C program that adds equivalent elelments of2-d arrays. Using for loops to implemtn the sum with two row and three columns*/
+
+
+#include <stdio.h>
+int main()
+{
+    int FirstArray[2][3]={
+        {6,18,23},
+        {4,91,14}};
+    int SecondArray[2][3]={
+        {4,52,77},
+        {6,19,55}};
+    int sum_array[2][3];
+    for (int i=0;i<2;i++)
+    {
+        for(int j=0;j<3;j++)
+        {
+            sum_array[i][j]= FirstArray[i][j] + SecondArray[i][j];
+            printf("%d\n",sum_array[i][j]);
+        }
+        printf("\n");
+    }
+}
