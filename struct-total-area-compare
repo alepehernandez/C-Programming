@@ -1,0 +1,51 @@
+//
+//  main.c
+//  EX17
+//
+//  Created by Alejandra Perez Hernandez on 11/17/21.
+//
+
+#include <stdio.h>
+
+    struct room{
+        float Lenght;
+        float Width;
+    };
+int main() {
+    struct room Bathroom1, Livingroom1, Kitchen1, Bedroom1;
+    struct room Bedroom2_1, Bedroom2_2,Livingroom2, Kitchen2;
+
+    // storing info house 1
+    Bedroom1.Lenght=15;
+    Bedroom1.Width=10;
+    Bathroom1.Lenght=10;
+    Bathroom1.Width=7;
+    Kitchen1.Lenght=15;
+    Kitchen1.Width=10;
+    Livingroom1.Lenght=25;
+    Livingroom1.Width=20;
+    
+    int House1TotalArea = Bedroom1.Lenght * Bedroom1.Width+ Bathroom1.Lenght* Bathroom1.Width + Kitchen1.Lenght*Kitchen1.Width + Livingroom1.Lenght*Livingroom1.Width;
+    
+    // storing info house 2
+    Bedroom2_1.Lenght=10;
+    Bedroom2_1.Width=10;
+    Bedroom2_2.Lenght=10;
+    Bedroom2_2.Width=12;
+    Kitchen2.Lenght=16;
+    Kitchen2.Width=10;
+    Livingroom2.Lenght=15;
+    Livingroom2.Width=12;
+    
+    int House2TotalArea = Bedroom2_1.Lenght*Bedroom2_1.Width + Bedroom2_2.Lenght*Bedroom2_2.Width + Kitchen2.Lenght*Kitchen2.Width + Livingroom2.Lenght*Livingroom2.Width;
+    
+    // comparing House 1 and House 2
+    if (House1TotalArea > House2TotalArea) {
+        printf("House1 is greater in sqft with a total of: %d compared with House2 total sqft of:%d \n", House1TotalArea, House2TotalArea);;
+    }
+    else
+    {
+        printf("House2 is greater in sqft with a total of:%d compared with House1 total sqft of:%d \n", House2TotalArea, House1TotalArea);;
+    }
+    return 0;
+    }
