@@ -1,1 +1,1 @@
-# triangle
+# Various C programming Exercises 
