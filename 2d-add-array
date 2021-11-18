@@ -1,4 +1,4 @@
-/* Write, Compille and Run a C program that adds equivalent elelments of2-d arrays. Using for loops to implemtn the sum with two row and three columns*/
+/* Write, Compille and Run a C program that adds equivalent elelments of 2-D arrays. Using for loops to implement the sum with two row and three columns*/
 
 
 #include <stdio.h>
