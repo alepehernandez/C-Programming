@@ -1,3 +1,5 @@
+// Write a C programming that print something
+
 #include<stdio.h>
 
 void printSomething();

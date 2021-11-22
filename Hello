@@ -1,12 +1,8 @@
-/* Write a C program to print your name, and personal info */
-
+/* Write a C program that print your name, and personal info */
 
 #include <stdio.h>
-
 int main()
 {
- 
-    
     printf("Name: Alejandra P. Hernandez\n");
     printf("City: Los Angeles, CA\n");
     printf("Website: www.alejandraphernandez.com\n");
