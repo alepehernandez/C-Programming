@@ -1,4 +1,4 @@
-/* Write a C program of a banking system | Work in Progress
+/* Write a C program of a banking system | Work in Progress 
 */
 
 #include <stdio.h>
@@ -12,13 +12,11 @@ int pin=1234, option, enteredPin, count=0, amount=1;
 float balance =5000;
 int continueTransacion =1;
 
-
+// Print Current time and date
 time_t now;
 time (&now);
 printf("\n");
 printf("%s",ctime(&now));
-
-
 
 
 
