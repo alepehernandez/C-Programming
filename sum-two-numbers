@@ -1,11 +1,11 @@
-/* Write a C program that ask user to input two numbers, then add the two numbers*/
-
+/* Write a C program that ask users to input two numbers, then add the two numbers*/
 
 #include <stdio.h>
-
 int main()
 {
+    // define integers a and b
     int a,b;
+    //Ask users for number inout then Read the numbers usign scanf
     printf("Enter two numbers:");
     scanf("%d %d", &a, &b);
     
