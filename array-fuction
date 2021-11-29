@@ -1,7 +1,6 @@
 //
 //  main.c
-// Write a function that adds two arrays, 
-//  Created by Alejandra Perez Hernandez on 11/3/21.
+// Write a function that adds two arrays
 
 #include <stdio.h>
 void SumOfArrays (int[],int[], int[], int);
