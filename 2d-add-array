@@ -2,7 +2,6 @@
 Using for loops to implement the sum with two row and three columns*/
 
 #include <stdio.h>
-
 int main()
 {
     int FirstArray[2][3]={
