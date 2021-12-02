@@ -6,7 +6,6 @@ int findMinElem(int [], int );//function declaration
 int main()
 {
     int MAX=9;
-    
     int arr1[MAX],mxelem,minelem,n,i;
     
     printf("\n\n Function : Get MAX and MIN element of an array\n");
