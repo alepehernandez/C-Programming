@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 int main(int argc, const char * argv[]) {
+
     // declare integers
     int num,count;
     
