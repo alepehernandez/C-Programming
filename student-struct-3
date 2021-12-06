@@ -1,0 +1,77 @@
+//
+//  main.c
+//  EX17-1
+//
+//  Created by Alejandra Perez Hernandez on 11/17/21.
+//
+
+
+#include <stdio.h>
+struct Student {
+    int roll[5];// student roll
+    float marks[3];
+    float grade[3];
+} s[5];
+
+int main() {
+
+    
+    int i = 0 ;
+    
+    struct Student student1;
+    struct Student student2;
+    struct Student student3;
+    struct Student student4;
+    struct Student student5;
+    
+    
+    // Student 1
+    printf("Student 1 Grades: ");
+    scanf("%f %f %f",&student1.grade[0],&student1.grade[1],&student1.grade[2]);
+    printf("\n");
+    // Student 2
+    printf("Student 2 Grades: ");
+    scanf("%f %f %f",&student2.grade[0],&student2.grade[1],&student2.grade[2]);
+    printf("\n");
+    // Student 3
+    printf("Student 3 Grades: ");
+    scanf("%f %f %f",&student3.grade[0],&student3.grade[1],&student3.grade[2]);
+    printf("\n");
+    // Student 4
+    printf("Student 4 Grades: ");
+    scanf("%f %f %f",&student4.grade[0],&student4.grade[1],&student4.grade[2]);
+    printf("\n");
+    // Student 5
+    printf("Student 5 Grades: ");
+    scanf("%f %f %f",&student5.grade[0],&student5.grade[1],&student5.grade[2]);
+    printf("\n");
+    
+
+    
+    
+    // storing information
+    for (i = 0; i < 5; ++i) {
+        s[i].roll[i] = i + 1;
+        printf("\nStudent %d\n", s[i].roll[i]);
+        printf("Enter Grades: ");
+        scanf("%f %f %f", &s[i].marks[i],&s[i].marks[i],&s[i].marks[i]);
+    }
+    
+    //Get the MAX grade of the 5 students
+    int grade1, grade2, grade3, largest;
+       printf("Please Enter three different values:\n");
+       scanf("%d %d %d", &grade1, &grade2, &grade3);
+       largest =((grade1>grade2 && grade1>grade3)?grade1: (grade2>grade3)?grade2:grade3);
+       printf("Largest number = %d \n",largest);
+    
+    printf("Displaying Highest Grade:\n\n");
+    // displaying information
+    for (i = 0; i < 5; ++i) {
+        printf("\nStudent: %d\n", i + 1);
+    
+        printf("Marks: %.1f", s[i].marks[i]);
+        printf("\n");
+    }
+    return 0;
+}
+
