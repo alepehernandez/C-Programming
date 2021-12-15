@@ -10,9 +10,11 @@ You must print out the resulting sum of the two arrays  which a 2D array of size
 #include <stdio.h>
 int main()
 {
+// First Array Initialized
     int FirstArray[2][3]={
         {6,18,23},
         {4,91,14}};
+// Second Array Initialized
     int SecondArray[2][3]={
         {4,52,77},
         {6,19,55}};
