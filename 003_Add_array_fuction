@@ -1,9 +1,12 @@
-//
-//  main.c
-// Write a function that adds two arrays
+/*The void function should take three arrays, array1 , array2 and sum_array.
+sum_array or the array name that is passed to sum_array should be printed in main program.
+// Write a function that adds two arrays*/
+
 
 #include <stdio.h>
+
 void SumOfArrays (int[],int[], int[], int);
+
 int main()
 {
     int array1[4]={1,2,3,4};
