@@ -1,5 +1,4 @@
-/*The void function should take three arrays, array1 , array2 and sum_array.
-sum_array or the array name that is passed to sum_array should be printed in main program.
+/*The void function should take three arrays, array1 , array2 and sum_array. sum_array or the array name that is passed to sum_array should be printed in main program.
 // Write a function that adds two arrays*/
 
 
