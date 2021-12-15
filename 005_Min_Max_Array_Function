@@ -18,7 +18,7 @@ int main()
     printf("\n\n Function : Get MAX and MIN element of an array\n");
     printf("\n-----------------------------------------------\n");
 
-       printf(" Input the number of elements to be stored in the array:");
+       printf("Input the number of elements to be stored in the array:");
        scanf("%d",&n);
   
        printf(" Input %d elements in the array:\n",n);
