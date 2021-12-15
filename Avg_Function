@@ -1,0 +1,32 @@
+// Write a function that takes average of of 4 numbers. numbers are passed from Main to function
+
+#include <stdio.h> 
+double FindAverage (int num1, int num2, int num3, int num4) 
+{ 
+    double avg; 
+    avg= (num1+num2+num3+num4)/4.0; 
+    return avg; 
+} 
+ 
+int main() 
+{ 
+    int num1, num2, num3, num4; 
+    float avg; 
+    int sum=0; 
+ 
+    printf("Enter first number: "); 
+    scanf("%d",&num1); 
+    printf("Enter second number: "); 
+    scanf("%d",&num2); 
+    printf("Enter third number: "); 
+    scanf("%d",&num3); 
+    printf("Enter fourth number: "); 
+    scanf("%d",&num4); 
+    sum+= num1+num2+num3+num4; 
+    
+  //%.2f is used for displaying output upto two decimal places
+    avg=sum/4.0; 
+    printf("The Average of %d, %d, %d, and %d is: %.3f\n",num1,num2,num3,num4,avg); 
+    return 0; 
+} 
+ 
