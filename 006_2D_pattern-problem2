@@ -1,0 +1,39 @@
+/*Problem 2) Extract diagonal elements of a square matrix and put into a 1-dimensional array.
+As an example, you can read the matrix below from input using scanf:
+1 ―9 10
+21 60 22
+8 5 ―7 
+And your output display should look like:
+1
+60
+―7*/
+
+
+#include <stdio.h> 
+ 
+    int main(){ 
+        int matrix[3][3]; 
+        int r=3; 
+        int i,j; 
+        int diag[3]; 
+         
+        for(i=0; i< r; i++) 
+        { 
+            for (j=0; j<r; j++) { 
+                printf("matrix[%d][%d]=",i,j); 
+                scanf("%d", &matrix[i][j]); 
+            } 
+            } 
+        // Diagonal 1, 60, -7 
+         
+        printf("The diagonal Elements in the matrix are:\n"); 
+        for (i=0;i<r; i++){ 
+            diag[i]=matrix[i][i]; 
+        } 
+         
+        for (i=0; i<r; i++) 
+        { 
+            printf("%d\n",diag[i]); 
+        } 
+    return 0; 
+} 
