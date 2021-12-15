@@ -13,7 +13,8 @@ Then : sum_array[0] should be 4, sum_array[1] should be 7 and sum_array[2] shoul
 int main ()
 {
     int i = 0 ;
-    int array1[3]={2,4,6};// initialize arrays
+    // initialize arrays
+    int array1[3]={2,4,6};
     int array2[3]={2,3,5};
     int total[3]={0,0,0};
     //Print Values
