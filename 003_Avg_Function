@@ -1,4 +1,4 @@
-// Write a function that takes average of of 4 numbers. numbers are passed from Main to function
+// Write a function that takes average of 4 numbers. numbers are passed from Main to function
 
 #include <stdio.h> 
 double FindAverage (int num1, int num2, int num3, int num4) 
