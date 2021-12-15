@@ -1,0 +1,60 @@
+/*Problem 1) Find how many  non-zero element are in a matrix (two-dimensional array)- use as 
+an example: 
+10 ―4 0 
+7 8 3
+0 0 1
+Read the values from input (scanf) using for loops and test your code one other set of values.*/
+
+
+#include <stdio.h> 
+int main() 
+{ 
+    int matrix[3][3]={ 
+        {10,-4,0}, 
+        {7,8,3}, 
+        {0,0,1} 
+    }; 
+   int r,c; 
+   int i, j; 
+   int count=0; 
+    printf("Input number of Rows for the matrix :"); 
+    scanf("%d", &r); 
+    printf("Input number of Columns for the matrix :"); 
+    scanf("%d",&c); 
+    printf("Input elements in the first matrix :\n"); 
+        for(i=0;i<r;i++) 
+         { 
+             for(j=0;j<c;j++) 
+             { 
+            printf("element - [%d],[%d] : ",i,j); 
+            scanf("%d",&matrix[i][j]); 
+             } 
+         } 
+    printf("The matrix is :\n"); 
+  for(i=0;i<r;i++) 
+  { 
+    for(j=0;j<c ;j++) 
+      printf("% 4d",matrix[i][j]); 
+     printf("\n"); 
+  } 
+     for(i=0; i<r; i++) 
+     { 
+      for(j=0; j<c; j++) 
+      { 
+        if(((i==j) && (matrix[i][j] != 1)) || ((i!=j) && (matrix[i][j] !=0))) 
+  { 
+    break; 
+  } 
+ } 
+    } 
+ 
+    for(i=0; i< r; i++){ 
+         
+        for (j=0; j<c; j++) { 
+            if(matrix[i][j]!=0) 
+                count++; 
+        } 
+        } 
+    printf("non-zero elements in the matrix:%d\n", count); 
+     return 0; 
+ } 
