@@ -1,5 +1,11 @@
-/* Write, Compile and Run a C program that adds equivalent elelments of 2-D arrays. 
-Using for loops to implement the sum with two row and three columns*/
+/* Write, compile, and run a C program that adds equivalent elements of the two- 
+dimensional arrays named first and second. Using for loops to implement the sum with two row and three columns*/
+// you can initialize the 2D arrays First and Second in your code: 
+For example: First[2][3] ={{16,18,23},{54,91,11}}
+
+ 
+
+You must print out the resulting sum of the two arrays  which a 2D array of size 2 by 3 
 
 #include <stdio.h>
 int main()
