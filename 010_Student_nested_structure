@@ -1,0 +1,48 @@
+/* Div name is char[50] and year in college is "int".Then read  your information into the fields:Name, age, DOB, roll_number_marks, Div name, year in college.
+lastly, write out these fields to the output.*/
+
+
+#include <stdio.h> 
+    struct person 
+    { 
+        char name[50]; 
+        int age; 
+        char dob[10]; 
+    }; 
+    struct student 
+    { 
+        struct person info; 
+        int roll_no; 
+        float marks; 
+        int YearInCollege; 
+        char DeptName[50]; 
+    }; 
+ 
+int main(){ 
+     
+    struct student s1; 
+    printf("Enter name: "); 
+    scanf("%s", s1.info.name); 
+    printf("Enter DOB: "); 
+    scanf("%s",s1.info.dob); 
+    printf("Enter Age: "); 
+    scanf("%d", &s1.info.age); 
+    printf("Enter Roll No: "); 
+    scanf("%d",&s1.roll_no); 
+    printf("Enter Department: "); 
+    scanf("%s",s1.DeptName); 
+    printf("Enter Year in College: "); 
+    scanf("%d",&s1.YearInCollege); 
+    printf("Enter Marks: "); 
+    scanf("%f",&s1.marks); 
+     
+    printf("\nDisplay Student Information\n"); 
+     
+    printf("Name:%s\n",s1.info.name); 
+    printf("DOB:%s\n",s1.info.dob); 
+    printf("Age:%d\n",s1.info.age); 
+    printf("Roll No:%d\n",s1.roll_no); 
+    printf("Department:%s\n",s1.DeptName); 
+    printf("Year in College:%d\n",s1.YearInCollege); 
+    printf("Marks:%.2f\n",s1.marks); 
+} 
