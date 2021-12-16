@@ -1,8 +1,7 @@
 //  main.c
 //  EX17
-// Write a C programm that add the area of House1 and House2, then compare and print bigger house
-//  Created by Alejandra Perez Hernandez on 11/17/21.
-//
+// Write a C programm that calculate the area of a house and compare it with another house to see which one is bigger. House1 vs. House2. We need to have a struct that has width and length in it. This struct represents a rectangular room.
+
 
 #include <stdio.h>
 
