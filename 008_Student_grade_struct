@@ -8,41 +8,39 @@ s[3]: 90,92,80. s[4]: 66,77, 82
 4) Average the grades of the 5 students , using the largest grade out of three for each student. Note: you need to average  5 grades each for one student.
 
 
-
-#include <stdio.h>
-struct Student {
-   int grade[3];
-};
-
-int main() {
-    struct Student s[5];
-    int i=0;
-    
-    // Ask user to enter grade for students
-    for (i = 0; i < 5; ++i) {
-        printf("Enter Grades for student %d:", (i+1));
-        scanf("%d %d %d", &s[i].grade[0],&s[i].grade[1],&s[i].grade[2]);
-    }
-    
-    int sum=0,j;
-    for(i=0;i<5; i++)
-    {
-        //declare and initialize Max variables
-    int max=s[i].grade[0];
-        //find largest marks for each student
-        for(j=0;j<3;j++)
-        {
-            if(max<s[i].grade[j])
-            {
-                max=s[i].grade[j];
-            }
-        }
-    printf("Largest grade of Student %d: %d\n",(i+1),max);
-    // sum of largest
-    sum=sum+max;
-}
-// find avg
-    double avg=sum/5;
-    printf("\n AVG of largest marsk is %lf\n",avg);
-    return 0;
-}
+#include <stdio.h> 
+struct Student { 
+    int marks[3]; 
+}; 
+ 
+int main() 
+{ 
+    struct Student s[5]; 
+    int i = 0 ; 
+    int sum=0; 
+    // Ask user to enter student's grade 
+    for (i = 0; i < 5; ++i) { 
+        printf("\nStudent %d\n",i+1); 
+        printf("Enter Grades: "); 
+        scanf("%d %d %d", &s[i].marks[0],&s[i].marks[1],&s[i].marks[2]); 
+    } 
+    // Declare and Initialize MAX for highest grade 
+    for (i = 0; i < 5; ++i) 
+    { 
+        int max=s[i].marks[0]; 
+        for(int j =0; j<3;j++) 
+        { 
+            if(max<s[i].marks[j]) 
+            { 
+                max=s[i].marks[j]; 
+            } 
+        } 
+        printf("\nStudent %d highest grade: %d",(i+1),max); 
+        sum+=max; 
+    } 
+ 
+    double avg=sum/5; 
+    printf("\nAverage of highest grades is: %lf\n", avg); 
+    printf ("\n"); 
+    return 0; 
+} 
