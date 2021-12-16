@@ -1,9 +1,14 @@
-//
-//  main.c
-//  EX17-1
-//
-//  Created by Alejandra Perez Hernandez on 11/17/21.
-// FINAL Submitted
+/*Using the student structure example provided on Canvas Pages,
+
+1) Redefine marks as an array of size 3- so each student can have three grades.
+2) Using scanf read three grades for each student as follows:
+
+s[0] (first student) : 80,90,85.  s[1] (second student) : 70,75,80.  s[2] : 76,86,92
+s[3]: 90,92,80. s[4]: 66,77, 82
+
+3) Write your program so you can select the largest grade for each student (out of three grades)
+4) Average the grades of the 5 students , using the largest grade out of three for each student. Note: you need to average  5 grades each for one student.
+
 
 
 #include <stdio.h>
