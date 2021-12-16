@@ -10,7 +10,6 @@ And your output display should look like:
 
 
 #include <stdio.h> 
- 
     int main(){ 
         int matrix[3][3]; 
         int r=3; 
