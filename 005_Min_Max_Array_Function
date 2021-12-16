@@ -4,6 +4,7 @@ Then write two functions that finds  Min and the other one finds Max of the arra
 You then print the values of Max and Min in main.*/
 
 
+
 #include<stdio.h>
 
 double getMax (double arr[], int size){
