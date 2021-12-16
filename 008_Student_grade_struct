@@ -1,6 +1,4 @@
-/*Using the student structure example provided on Canvas Pages,
-
-1) Redefine marks as an array of size 3- so each student can have three grades.
+/* 1) Redefine marks as an array of size 3- so each student can have three grades.
 2) Using scanf read three grades for each student as follows:
 
 s[0] (first student) : 80,90,85.  s[1] (second student) : 70,75,80.  s[2] : 76,86,92
