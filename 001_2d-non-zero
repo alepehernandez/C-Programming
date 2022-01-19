@@ -1,4 +1,4 @@
-//Write a C Program Find how many  non-zero element are in a matrix (two-dimensional array)
+// Write a C Program that finds how many non-zero element are in a matrix (two-dimensional array)
 
 #include <stdio.h>
 
