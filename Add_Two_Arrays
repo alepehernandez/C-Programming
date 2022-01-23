@@ -1,0 +1,8 @@
+1. Start
+2. Declare two arrays
+3. Initialize these two arrays
+4. Declare another array that will store the merged arrays. 
+5. The size of the merged arrays should be equal to the sum of the other two arrays.
+6. Call a function that will merge these arrays. 
+7. For loop will help to iterate every element present in the first arrays
+
